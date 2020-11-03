@@ -10,6 +10,7 @@
 
 
     <EditText
+        android:id="@+id/etMain_cep"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:digits="0123456789"
@@ -21,22 +22,27 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <Button
-            android:background="@color/colorPrimary"
-            android:layout_height="wrap_content"
             android:id="@+id/btnMain_buscarCep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
+            android:background="@color/colorPrimary"
             android:padding="10dp"
             android:text="Buscar CEP"
             android:textColor="#FDFDFD"
-            android:textSize="22sp"
-            android:layout_width="wrap_content"/>
+            android:textSize="22sp" />
     </LinearLayout>
 
-
-
+    <TextView
+        android:id="@+id/etMain_resposta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="100dp"
+        android:textSize="15sp"
+        />
 
 </LinearLayout>
